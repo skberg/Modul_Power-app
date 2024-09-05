@@ -1,0 +1,53 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_cr42e_products_forms",
+      "Namespace": "Products (Forms)",
+      "Values": {
+        "Information": "ae98bff8-fea0-4572-8642-fd5d2fb988b4"
+      }
+    },
+    {
+      "Kind": "default.cds_cr42e_inventory_forms",
+      "Namespace": "Inventories (Forms)",
+      "Values": {
+        "Information": "08afc178-5880-47b0-af8e-db8765d56dbd"
+      }
+    },
+    {
+      "Kind": "default.cds_cr42e_sales_forms",
+      "Namespace": "Sales (Forms)",
+      "Values": {
+        "Information": "1c8e4bd1-1a8f-4333-bd2e-d764472af67a"
+      }
+    },
+    {
+      "Kind": "default.cds_cr42e_orders_forms",
+      "Namespace": "Orders (Forms)",
+      "Values": {
+        "Information": "c05620ab-57e2-4e09-b695-f3b022509dec"
+      }
+    },
+    {
+      "Kind": "default.cds_cr42e_store_forms",
+      "Namespace": "Stores (Forms)",
+      "Values": {
+        "Information": "056991f8-6388-4e3a-b394-36545e98a9b4"
+      }
+    },
+    {
+      "Kind": "default.cds_cr42e_usercaselabe1_forms",
+      "Namespace": "User-case-labe1S (Forms)",
+      "Values": {
+        "Information": "9eec41cf-d0ff-4c12-8b9c-e3389a890c00"
+      }
+    },
+    {
+      "Kind": "default.cds_cr42e_supplier_forms",
+      "Namespace": "Suppliers (Forms)",
+      "Values": {
+        "Information": "3fd36e50-6737-4651-96aa-e55c78b89c0e"
+      }
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr42e_stores",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr42e_store",
+    "MaxGetRowsCount": 500,
+    "Name": "Stores",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr42e_inventory_StoreID_cr42e_store": "Inventories",
+      "cr42e_location": "Location",
+      "cr42e_manager": "Manager",
+      "cr42e_name": "StoreName (cr42e_name)",
+      "cr42e_sales_StoreID_cr42e_store": "Sales",
+      "cr42e_store_AsyncOperations": "System Jobs",
+      "cr42e_store_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr42e_store_DuplicateBaseRecord": "Duplicate Records (cr42e_store_DuplicateBaseRecord)",
+      "cr42e_store_DuplicateMatchingRecord": "Duplicate Records (cr42e_store_DuplicateMatchingRecord)",
+      "cr42e_store_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr42e_store_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr42e_store_ProcessSession": "Process Sessions",
+      "cr42e_store_SyncErrors": "Sync Errors",
+      "cr42e_storeid": "StoreID",
+      "cr42e_storename": "StoreName (cr42e_storename)",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Stores",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Stores (Views)",
+    "Name": "_cr42e_store_views",
+    "RelatedEntityName": "Stores",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "30aaf051-cb28-4bf5-b899-1b505f23fad0": "Store Associated View",
+      "3413505e-6944-49c6-b670-7e881ad9a751": "Store Lookup View",
+      "c0e64952-98e6-4588-86fb-0cdc4933940e": "Active Stores",
+      "da7b720a-9c79-4fdf-9a4e-2e1c48e90a74": "Store Advanced Find View",
+      "e9bb2e27-17f7-4a16-86a8-3cabe49f6b62": "Inactive Stores"
+    }
+  },
+  {
+    "DisplayName": "Status (Stores)",
+    "Name": "cr42e_store_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Stores"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Stores",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Stores)",
+    "Name": "cr42e_store_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Stores"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Stores",
+    "Type": "OptionSetInfo"
+  }
+]

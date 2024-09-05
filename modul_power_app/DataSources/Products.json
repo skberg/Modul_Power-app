@@ -1,0 +1,129 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr42e_productses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr42e_products",
+    "MaxGetRowsCount": 500,
+    "Name": "Products",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr42e_category": "Category",
+      "cr42e_description": "Description",
+      "cr42e_id": "Product Name",
+      "cr42e_inventory_ProductID_cr42e_products": "Inventories",
+      "cr42e_orders_ProductID_cr42e_products": "Orders",
+      "cr42e_price": "Price",
+      "cr42e_price_base": "Price (Base)",
+      "cr42e_products_AsyncOperations": "System Jobs",
+      "cr42e_products_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr42e_products_DuplicateBaseRecord": "Duplicate Records (cr42e_products_DuplicateBaseRecord)",
+      "cr42e_products_DuplicateMatchingRecord": "Duplicate Records (cr42e_products_DuplicateMatchingRecord)",
+      "cr42e_products_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr42e_products_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr42e_products_ProcessSession": "Process Sessions",
+      "cr42e_products_SyncErrors": "Sync Errors",
+      "cr42e_productsid": "ProductID",
+      "cr42e_sales_ProductID_cr42e_products": "Sales",
+      "cr42e_sku": "SKU",
+      "cr42e_SupplierID": "SupplierID",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "exchangerate": "Exchange Rate",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "transactioncurrencyid": "Currency",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Products",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Products (Views)",
+    "Name": "_cr42e_products_views",
+    "RelatedEntityName": "Products",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "56a5784d-205f-4883-b9fd-7c5799e43ba6": "Products Lookup View",
+      "57e290ef-b4c7-45e6-9716-2345b12e5bc0": "Products Advanced Find View",
+      "832ec0b7-5826-4ebb-9e23-56df1f69627b": "Products Associated View",
+      "a6ce7442-5bfa-4e99-94d9-459a7dd78df1": "Inactive Products",
+      "e60e9d0e-f3ea-49f4-bb8a-90d6f39b15a3": "Active Products"
+    }
+  },
+  {
+    "DisplayName": "Product Category",
+    "Name": "cr42e_productcategory",
+    "OptionSetInfoNameMapping": {
+      "557910000": "Food",
+      "557910001": "Tech",
+      "557910002": "Home supplies"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr42e_category",
+        "OptionSetReferenceEntityName": "Products"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr42e_category",
+    "RelatedEntityName": "Products",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Products)",
+    "Name": "cr42e_products_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Products"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Products",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Products)",
+    "Name": "cr42e_products_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Products"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Products",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr42e_orderses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr42e_orders",
+    "MaxGetRowsCount": 500,
+    "Name": "Orders",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr42e_approvalstatus": "ApprovalStatus",
+      "cr42e_ApprovedBy": "ApprovedBy",
+      "cr42e_name": "OderID",
+      "cr42e_orderdate": "OrderDate",
+      "cr42e_orders_AsyncOperations": "System Jobs",
+      "cr42e_orders_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr42e_orders_DuplicateBaseRecord": "Duplicate Records (cr42e_orders_DuplicateBaseRecord)",
+      "cr42e_orders_DuplicateMatchingRecord": "Duplicate Records (cr42e_orders_DuplicateMatchingRecord)",
+      "cr42e_orders_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr42e_orders_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr42e_orders_ProcessSession": "Process Sessions",
+      "cr42e_orders_SyncErrors": "Sync Errors",
+      "cr42e_ordersid": "OrdersID",
+      "cr42e_ProductID": "ProductID",
+      "cr42e_quantityordered": "QuantityOrdered",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Orders",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Orders (Views)",
+    "Name": "_cr42e_orders_views",
+    "RelatedEntityName": "Orders",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "572a8a90-1f74-4561-b3e5-0a466ae9986f": "Orders Associated View",
+      "73144c65-c3ee-4076-8077-b133d91c1ee5": "Inactive Orders",
+      "a6751bbf-1c35-47a2-a47a-1e2251b1188d": "Active Orders",
+      "b920fff8-727e-4d4e-b47f-ad4ac6aa2308": "Orders Advanced Find View",
+      "bcac4c4d-89bb-4c41-a8ef-e9e78b4892dc": "Orders Lookup View"
+    }
+  },
+  {
+    "DisplayName": "ApprovalStatus",
+    "Name": "cr42e_approvalstatus",
+    "OptionSetInfoNameMapping": {
+      "557910000": "Pending",
+      "557910001": "Approved",
+      "557910002": "Rejected"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr42e_approvalstatus",
+        "OptionSetReferenceEntityName": "Orders"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr42e_approvalstatus",
+    "RelatedEntityName": "Orders",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Orders)",
+    "Name": "cr42e_orders_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Orders"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Orders",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Orders)",
+    "Name": "cr42e_orders_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Orders"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Orders",
+    "Type": "OptionSetInfo"
+  }
+]

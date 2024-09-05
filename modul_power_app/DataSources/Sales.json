@@ -1,0 +1,105 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr42e_saleses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr42e_sales",
+    "MaxGetRowsCount": 500,
+    "Name": "Sales",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr42e_name": "SalesID (cr42e_name)",
+      "cr42e_ProductID": "ProductID",
+      "cr42e_quantitysold": "QuantitySold",
+      "cr42e_saledate": "SaleDate",
+      "cr42e_sales_AsyncOperations": "System Jobs",
+      "cr42e_sales_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr42e_sales_DuplicateBaseRecord": "Duplicate Records (cr42e_sales_DuplicateBaseRecord)",
+      "cr42e_sales_DuplicateMatchingRecord": "Duplicate Records (cr42e_sales_DuplicateMatchingRecord)",
+      "cr42e_sales_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr42e_sales_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr42e_sales_ProcessSession": "Process Sessions",
+      "cr42e_sales_SyncErrors": "Sync Errors",
+      "cr42e_salesid": "SalesID (cr42e_salesid)",
+      "cr42e_StoreID": "StoreID",
+      "cr42e_totalsaleamount": "TotalSaleAmount",
+      "cr42e_totalsaleamount_base": "TotalSaleAmount (Base)",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "exchangerate": "Exchange Rate",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "transactioncurrencyid": "Currency",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Sales",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Sales (Views)",
+    "Name": "_cr42e_sales_views",
+    "RelatedEntityName": "Sales",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "4c5cbc68-0334-4c83-97de-aca3c7108833": "Sales Lookup View",
+      "6da39ab9-a83e-4a82-b9ef-285e260694c0": "Sales Advanced Find View",
+      "b0d78c76-6c8b-4d44-8af5-41cfc7d8f092": "Sales Associated View",
+      "c777c03e-655b-494f-862d-af0f643d5586": "Inactive Sales",
+      "f2dc2a59-d080-4c28-9838-8df6c98bb936": "Active Sales"
+    }
+  },
+  {
+    "DisplayName": "Status (Sales)",
+    "Name": "cr42e_sales_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Sales"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Sales",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Sales)",
+    "Name": "cr42e_sales_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Sales"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Sales",
+    "Type": "OptionSetInfo"
+  }
+]

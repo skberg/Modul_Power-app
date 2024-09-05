@@ -1,0 +1,121 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr42e_usercaselabe1s",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr42e_usercaselabe1",
+    "MaxGetRowsCount": 500,
+    "Name": "User-case-labe1S",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr42e_email": "Email",
+      "cr42e_name": "UserID (cr42e_name)",
+      "cr42e_orders_ApprovedBy_cr42e_usercaselabe1": "Orders",
+      "cr42e_role": "Role",
+      "cr42e_usercaselabe1_AsyncOperations": "System Jobs",
+      "cr42e_usercaselabe1_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr42e_usercaselabe1_DuplicateBaseRecord": "Duplicate Records (cr42e_usercaselabe1_DuplicateBaseRecord)",
+      "cr42e_usercaselabe1_DuplicateMatchingRecord": "Duplicate Records (cr42e_usercaselabe1_DuplicateMatchingRecord)",
+      "cr42e_usercaselabe1_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr42e_usercaselabe1_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr42e_usercaselabe1_ProcessSession": "Process Sessions",
+      "cr42e_usercaselabe1_SyncErrors": "Sync Errors",
+      "cr42e_usercaselabe1id": "UserID (cr42e_usercaselabe1id)",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "User-case-labe1S",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "User-case-labe1S (Views)",
+    "Name": "_cr42e_usercaselabe1_views",
+    "RelatedEntityName": "User-case-labe1S",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "4f476cd5-234c-4cf8-8cc9-0535b927bf73": "User-case-labe1 Advanced Find View",
+      "68745a80-7424-4154-bd61-13c7155e19a8": "User-case-labe1 Associated View",
+      "bd355ea0-6342-4c3a-93f8-1458860eaeab": "Inactive User-case-labe1S",
+      "e03477cf-ae31-4e9a-a945-30c024e1d6be": "User-case-labe1 Lookup View",
+      "f162511b-3fd9-41d2-8436-f7ea6256980d": "Active User-case-labe1S"
+    }
+  },
+  {
+    "DisplayName": "Roles",
+    "Name": "cr42e_roles",
+    "OptionSetInfoNameMapping": {
+      "557910000": "Inventory Manager",
+      "557910001": "Sales Representative",
+      "557910002": "Finance Analyst"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr42e_role",
+        "OptionSetReferenceEntityName": "User-case-labe1S"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr42e_role",
+    "RelatedEntityName": "User-case-labe1S",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (User-case-labe1S)",
+    "Name": "cr42e_usercaselabe1_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "User-case-labe1S"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "User-case-labe1S",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (User-case-labe1S)",
+    "Name": "cr42e_usercaselabe1_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "User-case-labe1S"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "User-case-labe1S",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr42e_suppliers",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr42e_supplier",
+    "MaxGetRowsCount": 500,
+    "Name": "Suppliers",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr42e_address": "Address",
+      "cr42e_contactinformation": "ContactInformation",
+      "cr42e_name": "SupplierName",
+      "cr42e_products_SupplierID_cr42e_supplier": "Products",
+      "cr42e_supplier_AsyncOperations": "System Jobs",
+      "cr42e_supplier_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr42e_supplier_DuplicateBaseRecord": "Duplicate Records (cr42e_supplier_DuplicateBaseRecord)",
+      "cr42e_supplier_DuplicateMatchingRecord": "Duplicate Records (cr42e_supplier_DuplicateMatchingRecord)",
+      "cr42e_supplier_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr42e_supplier_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr42e_supplier_ProcessSession": "Process Sessions",
+      "cr42e_supplier_SyncErrors": "Sync Errors",
+      "cr42e_supplierid": "SupplierID",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Suppliers",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Suppliers (Views)",
+    "Name": "_cr42e_supplier_views",
+    "RelatedEntityName": "Suppliers",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1a6217cc-8bee-4172-a248-37eddcc01095": "Supplier Advanced Find View",
+      "1c0aa86c-15fd-4851-a8a4-f4c845eea43a": "Supplier Lookup View",
+      "2770b3c3-27d1-4512-8bb8-458a9fd7606b": "Inactive Suppliers",
+      "c8246a51-19c3-4ce7-89ba-d22c40af055e": "Active Suppliers",
+      "cc8d4183-1a2f-4c53-bfc6-68acd9e29aea": "Supplier Associated View"
+    }
+  },
+  {
+    "DisplayName": "Status (Suppliers)",
+    "Name": "cr42e_supplier_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Suppliers"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Suppliers",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Suppliers)",
+    "Name": "cr42e_supplier_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Suppliers"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Suppliers",
+    "Type": "OptionSetInfo"
+  }
+]
